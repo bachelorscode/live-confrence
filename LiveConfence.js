@@ -33,6 +33,10 @@ const {IDMANAGER} = require('./Model');
     })
 })();
 
+app.get('/',async(req,res)=>{
+    res.status(200).send({msg:"Server is running.."});
+});
+
 app.post('/create/:name',async(req,res)=>{
     let data =  IDMANAGER();
     const id = uuidV4.v4();
