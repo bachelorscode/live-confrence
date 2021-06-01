@@ -33,8 +33,8 @@ const {IDMANAGER} = require('./Model');
     })
 })();
 
-app.get('/',async(req,res)=>{
-    res.status(200).send({msg:"Server is running.."});
+app.get('/',(req,res)=>{
+    return res.send('runnning one server');
 });
 
 app.post('/create/:name',async(req,res)=>{
