@@ -24,7 +24,7 @@ const {IDMANAGER} = require('./Model');
 
 
 (()=>{
-    mongoose.connect('mongodb://localhost/vc',{
+    mongoose.connect('mongodb+srv://admin:admin@cluster0.nn5p0.mongodb.net/vc?retryWrites=true&w=majority',{
         useUnifiedTopology:true,
         useNewUrlParser:true
     },(err)=>{
