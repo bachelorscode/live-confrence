@@ -28,7 +28,7 @@ const {IDMANAGER} = require('./Model');
         useUnifiedTopology:true,
         useNewUrlParser:true
     },(err)=>{
-        if(err) console.log('DATABASE CONNETION ERROR');
+        if(err) console.log(err);
         else console.log('DATABASE CONNECTION STATUS OK');
     })
 })();
